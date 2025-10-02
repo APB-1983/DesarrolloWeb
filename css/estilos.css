@@ -44,7 +44,7 @@ h1, p, a {
 }
 
 /*Index*/
-.principal {
+.principal, .ortopedicos {
   display: flex;
   flex-direction: column; 
   align-items: center;     
@@ -73,11 +73,27 @@ h1, p, a {
 }
 
 /*Ortopedicos*/
-.prod_ortop {
-    display: flex;
+.ortopedicos {color: #586875;}
+
+.container {
+    /*display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 10px 20px;
+    align-items: center;*/
+    padding: 20px;
+}
+
+.btn-primary {
+  background-color: #586875 !important;
+  border-color: #586875 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #2f3d49 !important;
+  border-color: #2f3d49 !important;
+  color: #ffffff !important;
 }
 /*Medicos*/
 .insumos_med {
