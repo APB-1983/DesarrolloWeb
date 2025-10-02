@@ -201,7 +201,7 @@ input[type="submit"]:hover {
 
 /*RESPONSIVE*/
 
-/*Pantallas medianas*/
+/*Pantallas medianas
 @media (max-width: 992px) {
   .navbar {
     flex-direction: column;
@@ -230,7 +230,7 @@ input[type="submit"]:hover {
   }
 }
 
-/*Pantallas chicas*/
+/*Pantallas chicas
 @media (max-width: 576px) {
   h1 {
     font-size: 1.8rem;
@@ -255,7 +255,7 @@ input[type="submit"]:hover {
   }
 
   .nosotros {
-    text-align: left; /* o center si preferís */
+    text-align: left; /* o center si preferís 
   }
 
   iframe {
@@ -267,4 +267,63 @@ input[type="submit"]:hover {
     flex-direction: column;
     gap: 10px;
   }
+}*/
+
+.principal {
+  margin-bottom: 40px;
 }
+
+.imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.nosotros {
+  color: #586875;
+}
+
+.mapa {
+  color: #586875;
+}
+
+/* Footer */
+.abajo {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+footer {
+  background-color: #a5c8ca;
+}
+
+/*-----------------------------------*/
+/* Navbar personalizada con Bootstrap */
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #586875 !important;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #2f3d49 !important;
+  text-decoration: underline;
+}
+
+/* Botón hamburguesa en tu color */
+.navbar-toggler {
+  border: none;
+}
+
+
