@@ -44,7 +44,7 @@ h1, p, a {
 }
 
 /*Index*/
-.principal, .ortopedicos, .medicos, .odontologicos {
+.principal, .ortopedicos, .medicos, .odontologicos, .contacto {
   display: flex;
   flex-direction: column; 
   align-items: center;     
@@ -73,7 +73,7 @@ h1, p, a {
 }
 
 /*Ortopedicos*/
-.ortopedicos {color: #586875;}
+.ortopedicos, .medicos, .contacto {color: #586875;}
 
 .container {
     padding: 20px;
@@ -93,8 +93,6 @@ h1, p, a {
   color: #ffffff !important;
 }
 /*Medicos*/
-.medicos {color: #586875;}
-
 .insumos_med {
   height: auto;
 }
@@ -125,23 +123,77 @@ h1, p, a {
 .odontologicos {color: #586875;}
 
 /*Contacto - Estilo formulario*/
-  form {
-    width: 300px;
-  }
+  /* Centrar formulario */
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto; /* Centrado horizontal + espacio arriba/abajo */
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco para contraste */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Barlow Condensed", sans-serif;
+}
 
-  label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-  }
+/* Estilo de etiquetas */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #586875;
+  font-size: 1.1rem;
+}
 
-  input {
-    display: block;
-    width: 100%;
-    padding: 6px;
-    margin-top: 5px;
-    box-sizing: border-box;
-  }
+/* Estilo de inputs y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #a5c8ca;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  color: #2f3d49;
+  font-family: "Barlow Condensed", sans-serif;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+  /*textarea {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  resize: vertical; /* permite redimensionar verticalmente */
+
+  /* Enfocar campos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #586875;
+  box-shadow: 0 0 5px rgba(88, 104, 117, 0.3);
+  outline: none;
+}
+
+/* Botón de envío */
+input[type="submit"] {
+  background-color: #586875;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2f3d49;
+}
 
 /*Footer*/
 .abajo {
