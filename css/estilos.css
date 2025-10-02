@@ -44,7 +44,7 @@ h1, p, a {
 }
 
 /*Index*/
-.principal, .ortopedicos {
+.principal, .ortopedicos, .medicos {
   display: flex;
   flex-direction: column; 
   align-items: center;     
@@ -76,9 +76,6 @@ h1, p, a {
 .ortopedicos {color: #586875;}
 
 .container {
-    /*display: flex;
-    justify-content: space-around;
-    align-items: center;*/
     padding: 20px;
 }
 
@@ -96,6 +93,8 @@ h1, p, a {
   color: #ffffff !important;
 }
 /*Medicos*/
+.medicos {color: #586875;}
+
 .insumos_med {
   height: auto;
 }
