@@ -1,0 +1,29 @@
+/* Secciones principales */
+ .ortopedicos, .medicos, .odontologicos, .contacto {
+  color: $color-principal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.imagen img {
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.nosotros {
+  color: $color-principal;
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.mapa {
+  margin: 40px 0;
+  text-align: center;
+  color: $color-principal;
+}

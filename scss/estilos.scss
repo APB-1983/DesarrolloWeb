@@ -1,0 +1,18 @@
+// Importaciones de parciales
+@import "variables";
+@import "mixins";
+
+body {
+  background-color: $color-fondo;
+}
+
+h1, p, a {
+  @include fuente-base;
+}
+
+// Componentes
+@import "navbar";
+@import "secciones";
+@import "botones";
+@import "formulario";
+@import "footer";

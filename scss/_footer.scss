@@ -1,0 +1,14 @@
+/* Footer */
+footer {
+  background-color: $color-secundario;
+}
+
+.abajo {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 10px 0;
+}

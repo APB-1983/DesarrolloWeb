@@ -1,0 +1,14 @@
+/* Botones */
+.btn-primary {
+  background-color: $color-principal !important;
+  border-color: $color-principal !important;
+  color: #ffffff !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-hover !important;
+    border-color: $color-hover !important;
+    color: #ffffff !important;
+  }
+}
