@@ -7,7 +7,7 @@ h1, p, a {
   font-family: "Barlow Condensed", sans-serif;
   color: #586875;
 }
-
+/*Barra*/
 .navbar {
   display: flex;
   justify-content: center; 
@@ -123,13 +123,13 @@ h1, p, a {
 .odontologicos {color: #586875;}
 
 /*Contacto - Estilo formulario*/
-  /* Centrar formulario */
+/* Centrar formulario */
 form {
   width: 100%;
   max-width: 400px;
-  margin: 40px auto; /* Centrado horizontal + espacio arriba/abajo */
+  margin: 40px auto; 
   padding: 20px;
-  background-color: #ffffff; /* Fondo blanco para contraste */
+  background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: "Barlow Condensed", sans-serif;
@@ -160,15 +160,7 @@ textarea {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-  /*textarea {
-  display: block;
-  width: 100%;
-  padding: 6px;
-  margin-top: 5px;
-  box-sizing: border-box;
-  resize: vertical; /* permite redimensionar verticalmente */
-
-  /* Enfocar campos */
+/* Enfocar campos */
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
@@ -204,4 +196,75 @@ input[type="submit"]:hover {
   gap: 30px;
   margin: 0;
   padding: 5px 0;
+}
+
+
+/*RESPONSIVE*/
+
+/*Pantallas medianas*/
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nosotros {
+    max-width: 90%;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 300px !important;
+  }
+}
+
+/*Pantallas chicas*/
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h5, p {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .nosotros {
+    text-align: left; /* o center si preferís */
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  footer .abajo {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
