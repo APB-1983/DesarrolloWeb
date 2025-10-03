@@ -50,9 +50,9 @@ h1, p, a {
 }
 
 .imagen img {
-  max-width: 1000px;
-  height: auto;
-  border-radius: 8px;
+  width: 100%;       
+  max-width: 100%;   
+  height: auto;      
 }
 
 .nosotros {
