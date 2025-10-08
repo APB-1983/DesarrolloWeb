@@ -136,6 +136,31 @@ form input[type=submit]:hover {
   background-color: #2f3d49;
 }
 
+/*Carrousel*/
+.carousel-item {
+  padding: 20px;
+}
+
+.carousel-text {
+  color: #586875;
+  padding: 20px;
+  text-align: left;
+  animation: fadeInRightStrong 1.2s ease-out;
+  opacity: 0; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInRightStrong {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Footer */
 footer {
   background-color: #a5c8ca;
